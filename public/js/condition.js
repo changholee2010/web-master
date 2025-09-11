@@ -13,11 +13,14 @@ function calculate() {
   //조건문.
   switch (opr) {
     case '+':
-      result = parseInt(first) + parseInt(last); break; // 아래부분으로 진행 break;
+      result = parseInt(first) + parseInt(last);
+      break; // 아래부분으로 진행 break;
     case '-':
-      result = first - last; break;
+      result = first - last;
+      break;
     case '*':
-      result = first * last; break;
+      result = first * last;
+      break;
     case '/':
       result = first / last;
   }
