@@ -23,3 +23,12 @@ if (friend1.height == friend2.height) {
 if (friend1.height < friend2.height) {
   console.log(friend2.name + '(이)가 크다');
 }
+
+let num3 = prompt("숫자를 입력하세요: ");
+console.log(num3); // 사용자의 입력값 => 홀수/짝수 출력.
+// if ... else ...
+if (num3 % 2 == 0) { // 조건만족.
+  console.log("짝수입니다");
+} else { // 조건이외의 경우.
+  console.log("홀수입니다");
+}
