@@ -16,3 +16,4 @@ if (result % 3 == 0) {
 
 }
 console.log(result);
+console.log("여기 수정됨");
