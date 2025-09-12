@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>IndexedDB 게시판</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .section { margin-bottom: 30px; }
+    input, textarea { width: 100%; padding: 8px; margin: 5px 0; }
+    button { padding: 10px; margin-top: 10px; }
+    .post { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <h1>📋 IndexedDB 게시판</h1>
+
+  <!-- 사용자 등록 / 로그인 -->
+  <div class="section">
+    <h2>🔐 로그인</h2>
+    <input type="text" id="loginUsername" placeholder="사용자 이름">
+    <input type="password" id="loginPassword" placeholder="비밀번호">
+    <button onclick="login()">로그인</button>
+    <button onclick="register()">회원가입</button>
+    <p id="loginStatus">현재 로그인: 없음</p>
+  </div>
+
+  <!-- 글 작성 -->
+  <div class="section" id="postSection" style="display: none;">
+    <h2>✍ 글 작성</h2>
+    <input type="text" id="postTitle" placeholder="제목">
+    <textarea id="postContent" placeholder="내용" rows="5"></textarea>
+    <button onclick="addPost()">작성하기</button>
+  </div>
+
+  <!-- 게시글 목록 -->
+  <div class="section">
+    <h2>📃 게시글 목록</h2>
+    <div id="postList"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
