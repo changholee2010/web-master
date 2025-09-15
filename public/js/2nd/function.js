@@ -30,4 +30,7 @@ function sum(n1, n2) { // sum함수의 지역(local).
   let result = n1 + n2;
   console.log(`결과는 ${result}`);
 }
-sum(10, 7);
+let num1 = 10,
+  num2 = 7;
+console.log(num1);
+sum(num1, num2);
