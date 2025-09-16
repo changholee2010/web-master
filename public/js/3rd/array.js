@@ -10,9 +10,21 @@ for (let i = 0; i < 4; i++) {
   console.log(fruits[i]);
 }
 
-let students = [{stdNo: 100, stdName: "김민기", score: 80},
-  {stdNo: 200, stdName: "김민준", score: 85},
-  {stdNo: 300, stdName: "박충식", score: 88}
+let students = [{
+    stdNo: 100,
+    stdName: "김민기",
+    score: 80
+  },
+  {
+    stdNo: 200,
+    stdName: "김민준",
+    score: 85
+  },
+  {
+    stdNo: 300,
+    stdName: "박충식",
+    score: 88
+  }
 ];
 
 let str = `<ul>`;
