@@ -35,7 +35,7 @@ function makeRow(post) {
   let div = document.createElement('div');
   for (let i = 0; i < fields.length; i++) {
     let span = document.createElement('span');
-    span.innerHTML = post[fields[i]];
+    span.innerHTML = post[fields[i]]; // 
     span.setAttribute('class', 'data-' + fields[i]);
     div.appendChild(span);
   };
@@ -54,3 +54,15 @@ xhtp.onload = function () {
     document.querySelector('#data-container').appendChild(div);
   });
 }
+
+
+// 객체의 속성.
+const person = {
+  name: 'Hong',
+  birth: '1999-09-09',
+  phone: '010-9999-9999'
+}
+person.name;
+person['birth'];
+const prop = 'phone';
+person[prop];
